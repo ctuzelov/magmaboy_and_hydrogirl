@@ -52,19 +52,6 @@ class Game:
         self.display.blit(level_select.right_player, right_cords)
 
     def user_select_level(self, level_select, controller):
-        """
-        Allow for user to select level.
-
-        As user clicks up and down arrows, move level indicator up and down.
-        When user clicks <enter>, return which level they selectd.
-
-        Args:
-            level_select::level_select class object
-                A class object that contains the images for the level seleciton
-                screen.
-            controller::controler class object
-                A contoller object that allows access to keyboard inputs
-        """
         # create current level selected index
         level_index = 0
         # create dictionary to map index to level name
